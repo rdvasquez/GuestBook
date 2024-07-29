@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js" defer></script>
+    <title>Vite Form</title>
+  </head>
+
+  <body>
+    <h1>
+      Tell us about the problem you're trying to solve, the vision you're
+      working to achieve, or the conversation you'd like to start.
+    </h1>
+
+    <div id="app">
+      <form id="formData">
+        <label for="title">Title</label>
+        <input
+          name="title"
+          id="title"
+          placeholder="Dr, Mr, Mrs, Ms, Miss"
+          autocomplete="off"
+        />
+
+        <label for="firstName">First Name</label>
+        <input
+          name="firstName"
+          id="firstName"
+          type="text"
+          autocomplete="given-name"
+        />
+
+        <label for="lastName">Last Name</label>
+        <input
+          name="lastName"
+          id="lastName"
+          type="text"
+          autocomplete="family-name"
+        />
+
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="enter your email address"
+          autocomplete="off"
+        />
+
+        <label for="country">Country</label>
+        <input name="country" id="country" autocomplete="off" />
+
+        <p>Keep me updated with newsletters, upcoming events, and services.</p>
+        <p>
+          By submitting this form, you agree to VST's Privacy Policy and Terms
+          of Use
+        </p>
+
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
