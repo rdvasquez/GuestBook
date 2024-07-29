@@ -3,12 +3,6 @@ body {
   margin: 0%;
 }
 
-#app {
-  height: 40vh;
-  width: 16vw;
-  margin-left: 50px;
-}
-
 #firstName {
   display: flex;
   flex-direction: row;
