@@ -1,17 +1,18 @@
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
-  const form = require("form");
-  const myObject = Object.fromEntries(data);
-  console.log(myObject);
+  const formData = new FormData(form);
+  const formValues = Object.fromEntries(formData);
 
-  fetch("http://localhost:8080/users", {
+  const response = await fetch("http://localhost:8000/success", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(myObject),
+    body: JSON.stringify(formValues),
   });
+  const data = await response.json();
+  console.log(data);
 });
