@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 const app = express();
 
 app.use(express.json());
-app.request(cors());
+app.use(cors());
 dotenv.config();
 
 app.post("/users", function (request, response) {
