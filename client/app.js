@@ -6,7 +6,7 @@ form.addEventListener("submit", async function (event) {
   const formData = new FormData(form);
   const formValue = Object.fromEntries(formData);
 
-  const response = await fetch("http://localhost:8000/DATABASE_URL", {
+  const response = await fetch("http://localhost:3000/DATABASE_URL", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
